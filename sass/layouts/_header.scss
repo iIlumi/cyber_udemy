@@ -6,18 +6,31 @@
     // Khi này form search bị chuyển thành inline
     // -> sẽ ko chiến trọn phần còn lại nữa
     align-items: center;
+
     .navbar-brand {
       flex-grow: 1;
       text-align: center;
       margin-right: 0;
+
       img {
         width: 110px;
       }
     }
+
     .myNavBar__categories {
       flex-grow: 1;
       text-align: center;
+      @include styleText($color-black-light, $fw-1, $fw-0);
+      // Thẻ categories dùng div 
+      // -> hover vào ko có dấu bàn tay như a link
+      // TODO fix lại
+      cursor: pointer;
+
+      i{
+        color: $color-gray-3;
+      }
     }
+
     .myNavBar__form-search {
       flex-grow: 8;
     }

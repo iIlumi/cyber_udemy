@@ -1,0 +1,14 @@
+// ko có tham số, ít dùng
+// -> giống như đặt class riêng
+
+// @mixin styleText {
+//     color: white;
+//     font-size: 13px;
+// }
+
+// Có tham số
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
