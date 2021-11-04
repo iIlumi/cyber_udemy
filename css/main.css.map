@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AGAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,uBAAuB;EACpC,SAAS,EFQN,IAAI;EEPP,WAAW,EFoBC,IAAI;EElBhB,KAAK,EFTO,OAAO;EEUnB,gBAAgB,EFRJ,IAAI;CESnB",
+    "mappings": "AGAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,uBAAuB;EACpC,SAAS,EFQN,IAAI;EEPP,WAAW,EFoBC,IAAI;EElBhB,KAAK,EFTO,OAAO;EEUnB,gBAAgB,EFRJ,IAAI;CESnB;;AEVD,AACE,SADO,CACP,eAAe,CAAC;EACd,OAAO,EAAE,IAAI;EAGb,WAAW,EAAE,MAAM;CAgBpB;;AArBH,AAMI,SANK,CACP,eAAe,CAKb,aAAa,CAAC;EACZ,SAAS,EAAE,CAAC;EACZ,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,CAAC;CAIhB;;AAbL,AAUM,SAVG,CACP,eAAe,CAKb,aAAa,CAIX,GAAG,CAAC;EACF,KAAK,EAAE,KAAK;CACb;;AAZP,AAcI,SAdK,CACP,eAAe,CAab,qBAAqB,CAAC;EACpB,SAAS,EAAE,CAAC;EACZ,UAAU,EAAE,MAAM;CACnB;;AAjBL,AAkBI,SAlBK,CACP,eAAe,CAiBb,sBAAsB,CAAC;EACrB,SAAS,EAAE,CAAC;CACb",
     "sources": [
         "../sass/main.scss",
         "../sass/helpers/_variables.scss",
@@ -8,7 +8,7 @@
         "../sass/base/_reset.scss",
         "../sass/base/_customize.scss",
         "../sass/layouts/_header.scss",
-        "../sass/layouts/_footer_scss",
+        "../sass/layouts/_footer.scss",
         "../sass/components/_buttons.scss",
         "../sass/pages/_home..scss"
     ],

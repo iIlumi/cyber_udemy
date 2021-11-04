@@ -1,0 +1,25 @@
+//  Chỉ lồng tối đa 6 cấp
+
+.myNavBar {
+  .myNavBar__left {
+    display: flex;
+    // Khi này form search bị chuyển thành inline
+    // -> sẽ ko chiến trọn phần còn lại nữa
+    align-items: center;
+    .navbar-brand {
+      flex-grow: 1;
+      text-align: center;
+      margin-right: 0;
+      img {
+        width: 110px;
+      }
+    }
+    .myNavBar__categories {
+      flex-grow: 1;
+      text-align: center;
+    }
+    .myNavBar__form-search {
+      flex-grow: 8;
+    }
+  }
+}
