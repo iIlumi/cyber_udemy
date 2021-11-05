@@ -1,6 +1,8 @@
 //  Chỉ lồng tối đa 6 cấp
 
 .myNavBar {
+  // check qua dev tool
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
   .myNavBar__left {
     display: flex;
     // Khi này form search bị chuyển thành inline
@@ -46,14 +48,33 @@
           box-shadow: none;
         }
 
-        .input-group-append{
-          .input-group-text{
+        .input-group-append {
+          .input-group-text {
             background-color: transparent;
             border-color: transparent;
             color: $color-red-0;
+
+            &:hover {
+              // parent selector chỉ hoạt động nếu sử dụng trong cấp con direct
+              color: $color-white-0;
+              background-color: $color-red-0;
+            }
           }
         }
       }
     }
   }
 }
+
+// .exBar {
+//   &__left {
+//     color: blue;
+//     .child {
+//       background-color: white;
+//     }
+//     &--modifier{
+//       // exBar__left--modifier
+//       font-size: 1rem;
+//     }
+//   }
+// }

@@ -11,6 +11,11 @@ body {
   background-color: #fff;
 }
 
+.myNavBar {
+  -webkit-box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+          box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+}
+
 .myNavBar .myNavBar__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,5 +73,10 @@ body {
   background-color: transparent;
   border-color: transparent;
   color: #ec5252;
+}
+
+.myNavBar .myNavBar__left .myNavBar__form-search .input-group .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
 }
 /*# sourceMappingURL=main.css.map */
