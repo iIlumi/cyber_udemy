@@ -19,6 +19,7 @@
 //   }
 // }
 
+// NOTE header left
 .myNavBar__left {
   display: flex;
   // Khi này form search bị chuyển thành inline
@@ -117,6 +118,28 @@
       &:hover {
         color: $color-white-0;
         background-color: $color-red-0;
+      }
+    }
+  }
+}
+
+// NOTE Header right
+// Chú ý khi làm việc với BS pha3icheck devtool
+// Coi selector tn để chọn các đè phù hợp, ngắn đủ
+.myNavBar__right {
+  .navbar-nav {
+    justify-content: space-between;
+    align-items: center;
+    .nav-item {
+      .nav-link {
+        @include styleText($color-black-light, $fw-1, $fw-0);
+      }
+    }
+    .myNavBar__cart {
+      .nav-link {
+        // có khoảng cách giữa các toán tử,
+        // -> check màu / autoformat
+        font-size: $fs-3 + 2;
       }
     }
   }

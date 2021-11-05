@@ -115,4 +115,23 @@ body {
   color: #fff;
   background-color: #ec5252;
 }
+
+.myNavBar__right .navbar-nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myNavBar__right .navbar-nav .nav-item .nav-link {
+  color: #505763;
+  font-size: 600;
+  font-weight: normal;
+}
+
+.myNavBar__right .navbar-nav .myNavBar__cart .nav-link {
+  font-size: 20px;
+}
 /*# sourceMappingURL=main.css.map */
