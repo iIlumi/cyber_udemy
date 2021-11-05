@@ -52,6 +52,12 @@
           // Hoặc phải xử lý với javascript
           transition: none;
 
+          color: $color-black-light;
+
+          &::placeholder {
+            color: $color-black-light;
+          }
+          
           &:focus {
             background-color: $color-white-0;
             // Cách 1 - 3 side viết tường minh ra

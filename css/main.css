@@ -69,6 +69,23 @@ body {
           box-shadow: none;
   -webkit-transition: none;
   transition: none;
+  color: #505763;
+}
+
+.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control::-webkit-input-placeholder {
+  color: #505763;
+}
+
+.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control:-ms-input-placeholder {
+  color: #505763;
+}
+
+.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control::-ms-input-placeholder {
+  color: #505763;
+}
+
+.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control::placeholder {
+  color: #505763;
 }
 
 .myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control:focus {
