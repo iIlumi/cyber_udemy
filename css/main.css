@@ -16,7 +16,7 @@ body {
           box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
 }
 
-.myNavBar .myNavBar__left {
+.myNavBar__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,7 +25,7 @@ body {
           align-items: center;
 }
 
-.myNavBar .myNavBar__left .navbar-brand {
+.myNavBar__left .navbar-brand {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -33,11 +33,11 @@ body {
   margin-right: 0;
 }
 
-.myNavBar .myNavBar__left .navbar-brand img {
+.myNavBar__left .navbar-brand img {
   width: 110px;
 }
 
-.myNavBar .myNavBar__left .myNavBar__categories {
+.myNavBar__categories {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -48,21 +48,32 @@ body {
   cursor: pointer;
 }
 
-.myNavBar .myNavBar__left .myNavBar__categories i {
+.myNavBar__categories i {
   color: #a1a7b3;
 }
 
-.myNavBar .myNavBar__left .myNavBar__form-search {
+.myNavBar__form-search {
   -webkit-box-flex: 8;
       -ms-flex-positive: 8;
           flex-grow: 8;
 }
 
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group {
+.myNavBar__form-search .input-group {
   background-color: #f2f3f5;
 }
 
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control {
+.myNavBar__form-search .input-group .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+
+.myNavBar__form-search .input-group .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.myNavBar__form-search .form-control {
   background-color: transparent;
   border-color: transparent;
   -webkit-box-shadow: none;
@@ -72,46 +83,35 @@ body {
   color: #505763;
 }
 
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control::-webkit-input-placeholder {
+.myNavBar__form-search .form-control::-webkit-input-placeholder {
   color: #505763;
 }
 
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control:-ms-input-placeholder {
+.myNavBar__form-search .form-control:-ms-input-placeholder {
   color: #505763;
 }
 
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control::-ms-input-placeholder {
+.myNavBar__form-search .form-control::-ms-input-placeholder {
   color: #505763;
 }
 
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control::placeholder {
+.myNavBar__form-search .form-control::placeholder {
   color: #505763;
 }
 
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control:focus {
+.myNavBar__form-search .form-control:focus {
   background-color: #fff;
   border-color: #dedfe0;
   border-right-color: transparent;
 }
 
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control:focus + .input-group-append .input-group-text {
+.myNavBar__form-search .form-control:focus + .input-group-append .input-group-text {
   background-color: #fff;
   border-color: #dedfe0;
   border-left-color: transparent;
 }
 
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control:focus + .input-group-append .input-group-text:hover {
-  color: #fff;
-  background-color: #ec5252;
-}
-
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group .input-group-append .input-group-text {
-  background-color: transparent;
-  border-color: transparent;
-  color: #ec5252;
-}
-
-.myNavBar .myNavBar__left .myNavBar__form-search .input-group .input-group-append .input-group-text:hover {
+.myNavBar__form-search .form-control:focus + .input-group-append .input-group-text:hover {
   color: #fff;
   background-color: #ec5252;
 }
