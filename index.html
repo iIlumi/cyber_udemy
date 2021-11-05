@@ -149,12 +149,10 @@
     <section class="courses">
         <div class="courses__content">
             <div class="row">
-                <div class="col-4">
-                    <div class="courses__left">
-                        <div>
-                            <h2>The world’s largest selection of courses</h2>
-                            <p>Choose from over 80,000 online video courses with new additions published every month</p>
-                        </div>
+                <div class="col-4 courses__left">
+                    <div>
+                        <h2>The world’s largest selection of courses</h2>
+                        <p>Choose from over 80,000 online video courses with new additions published every month</p>
                     </div>
                 </div>
                 <div class="col-8">
@@ -383,6 +381,25 @@
         crossorigin="anonymous"></script>
     <!-- OWL JS     -->
     <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.courses__carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

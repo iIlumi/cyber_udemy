@@ -1,0 +1,21 @@
+.courses {
+  margin: $mg-1 0;
+  .courses__content {
+    width: 90%;
+    margin: auto;
+    // set lại cấu trúc html kết hợp class vào trong col-
+    // fix việc sinh padding lung tung,
+    // gom class nên set css sẽ đơn giản hơn
+    .courses__left {
+      // Nếu ko gom class vào col
+      //  phải set w-h 100% để div con bọc hết cha lấy background-color
+      background-color: $color-gray-1;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      h2 {
+        @include styleText($color-black-0, $fs-3 + 1, $fw-0);
+      }
+    }
+  }
+}

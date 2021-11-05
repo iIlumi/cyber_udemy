@@ -247,6 +247,32 @@ body {
   font-weight: normal;
 }
 
+.courses {
+  margin: 25px 0;
+}
+
+.courses .courses__content {
+  width: 90%;
+  margin: auto;
+}
+
+.courses .courses__content .courses__left {
+  background-color: rgba(20, 23, 28, 0.05);
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.courses .courses__content .courses__left h2 {
+  color: #29303b;
+  font-size: 19px;
+  font-weight: normal;
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
