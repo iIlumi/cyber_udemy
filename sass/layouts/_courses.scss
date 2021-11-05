@@ -29,7 +29,7 @@
     // ko nên set border none vì sẽ bị giựt với BS
     &:hover {
       border: 5px solid transparent;
-      @include styleText($color-black-0, $fs-0, $fw-0);
+      @include styleText($color-blue-0, $fs-0, $fw-0);
     }
 
     // active phải để ở dưới

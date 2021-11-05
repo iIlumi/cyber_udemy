@@ -285,7 +285,7 @@ body {
 
 #myTab .nav-link:hover {
   border: 5px solid transparent;
-  color: #29303b;
+  color: #007791;
   font-size: 15px;
   font-weight: normal;
 }
@@ -410,5 +410,63 @@ body {
 .cover__content .cover__form .input-group .input-group-append .input-group-text:hover {
   color: #fff;
   background-color: #ec5252;
+}
+
+.card {
+  height: 275px;
+  margin-right: 1px;
+}
+
+.card .card-body {
+  padding: 1rem;
+}
+
+.card .card-body .card-title {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card .card-body .card-text {
+  color: #686f7a;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+.card .card-body .card__stars i {
+  color: #F4C150;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.card .card-body .card__stars .card__rate {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card .card-body .card__stars .card__total {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.card .card-body .card__price {
+  text-align: right;
+  padding: 7px 0;
+}
+
+.card .card-body .card__price span:first-child {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.card .card-body .card__price span:last-child {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
