@@ -23,6 +23,27 @@ body {
   background-color: #fff;
 }
 
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  color: #007791;
+  background-color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+          box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+  font-size: 24px;
+  position: absolute;
+  top: 35%;
+}
+
+.owl-carousel .owl-nav button.owl-next.owl-prev, .owl-carousel .owl-nav button.owl-prev.owl-prev {
+  left: -30px;
+}
+
+.owl-carousel .owl-nav button.owl-next.owl-next, .owl-carousel .owl-nav button.owl-prev.owl-next {
+  right: -30px;
+}
+
 .myNavBar {
   -webkit-box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
           box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
