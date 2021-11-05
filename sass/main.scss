@@ -1,6 +1,7 @@
 // 1 > helper
 @import "./helpers/variables";
 @import "./helpers/mixin";
+@import "./helpers/extend";
 
 // 2 > vendors
 
@@ -17,6 +18,7 @@
 
 // 5 > component
 @import "./components/button";
+@import "./components/cover";
 
 // 6 > pages
 @import "./pages/home";

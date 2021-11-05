@@ -1,3 +1,15 @@
+.backgroundImgClass {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -223,5 +235,32 @@ body {
   color: #fff;
   background-color: #521822;
   border: 1px solid #521822;
+}
+
+.cover {
+  background-image: url("../../img/cover.jpg");
+  height: 500px;
+  position: relative;
+  top: 50%;
+  left: 12%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.cover .cover__content {
+  max-width: 500px;
+  position: absolute;
+}
+
+.cover .cover__content h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.cover .cover__content p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */

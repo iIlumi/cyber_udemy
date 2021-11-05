@@ -1,0 +1,28 @@
+.cover {
+  background-image: url("../../img/cover.jpg");
+  // Kế thừa class
+  //   @extend .backgroundImgClass;
+  // Cũng có loại kế thừa với tên thẻ, id
+  //   @extend #id;
+  //   @extend tagName;
+
+  @extend %backgroundImg;
+  height: 500px;
+
+  position: relative;
+  top: 50%;
+  left: 12%;
+  transform: translateY(-50%);
+
+  .cover__content {
+    max-width: 500px;
+    position: absolute;
+    h1 {
+      @include styleText($color-white-0, $fs-2, $fw-2);
+    }
+
+    p {
+      @include styleText($color-white-0, $fs-3, $fw-0);
+    }
+  }
+}

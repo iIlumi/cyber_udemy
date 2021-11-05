@@ -1,0 +1,14 @@
+.backgroundImgClass {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Placeholder
+// Có tham số -> dùng mixin
+// ko tham số -> dùng extends
+%backgroundImg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
