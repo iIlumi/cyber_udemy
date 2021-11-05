@@ -19,3 +19,24 @@
     }
   }
 }
+
+#myTab {
+  margin-bottom: $mg-1;
+
+  .nav-link {
+    @include styleText($color-black-0, $fs-0, $fw-0);
+
+    // ko nên set border none vì sẽ bị giựt với BS
+    &:hover {
+      border: 5px solid transparent;
+      @include styleText($color-black-0, $fs-0, $fw-0);
+    }
+
+    // active phải để ở dưới
+    // -> ko bị hover đè lên mất luôn border botoom đang set
+    &.active {
+      border: none;
+      border-bottom: 5px solid $color-blue-0;
+    }
+  }
+}

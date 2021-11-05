@@ -273,6 +273,28 @@ body {
   font-weight: normal;
 }
 
+#myTab {
+  margin-bottom: 25px;
+}
+
+#myTab .nav-link {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#myTab .nav-link:hover {
+  border: 5px solid transparent;
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#myTab .nav-link.active {
+  border: none;
+  border-bottom: 5px solid #007791;
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
