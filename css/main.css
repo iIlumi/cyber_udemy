@@ -36,11 +36,20 @@ body {
   top: 35%;
 }
 
-.owl-carousel .owl-nav button.owl-next.owl-prev, .owl-carousel .owl-nav button.owl-prev.owl-prev {
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #fff;
+  color: #007791;
+}
+
+.owl-carousel .owl-nav button.owl-next:focus, .owl-carousel .owl-nav button.owl-prev:focus {
+  outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
   left: -30px;
 }
 
-.owl-carousel .owl-nav button.owl-next.owl-next, .owl-carousel .owl-nav button.owl-prev.owl-next {
+.owl-carousel .owl-nav button.owl-next {
   right: -30px;
 }
 
@@ -277,6 +286,11 @@ body {
   margin: auto;
 }
 
+.courses .courses__content .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .courses .courses__content .courses__left {
   background-color: rgba(20, 23, 28, 0.05);
   padding: 0 2rem;
@@ -314,6 +328,19 @@ body {
 #myTab .nav-link.active {
   border: none;
   border-bottom: 5px solid #007791;
+}
+
+.viewing {
+  padding: 22px 0;
+}
+
+.viewing .viewing__content {
+  width: 90%;
+  margin: auto;
+}
+
+.viewing .viewing__content h2 {
+  font-size: 20px;
 }
 
 .button--white {

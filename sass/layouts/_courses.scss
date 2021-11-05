@@ -3,6 +3,13 @@
   .courses__content {
     width: 90%;
     margin: auto;
+
+    // reset lại row margin của BS
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
     // set lại cấu trúc html kết hợp class vào trong col-
     // fix việc sinh padding lung tung,
     // gom class nên set css sẽ đơn giản hơn

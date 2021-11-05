@@ -26,12 +26,21 @@
     position: absolute;
     top: 35%;
 
-    &.owl-prev {
-      left: -30px;
+    &:hover {
+      background-color: $color-white-0;
+      color: $color-blue-0;
     }
 
-    &.owl-next {
-      right: -30px;
+    &:focus {
+      outline: none;
     }
+  }
+
+  &.owl-prev {
+    left: -30px;
+  }
+
+  &.owl-next {
+    right: -30px;
   }
 }
