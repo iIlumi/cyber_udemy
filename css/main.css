@@ -238,18 +238,18 @@ body {
 }
 
 .cover {
-  background-image: url("../../img/cover.jpg");
+  background-image: url("../img/cover.jpg");
   height: 500px;
   position: relative;
-  top: 50%;
-  left: 12%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .cover .cover__content {
   max-width: 500px;
   position: absolute;
+  top: 50%;
+  left: 12%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .cover .cover__content h1 {

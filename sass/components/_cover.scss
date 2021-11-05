@@ -1,22 +1,27 @@
 .cover {
-  background-image: url("../../img/cover.jpg");
+  //   background-image: url("../../img/cover.jpg");
+  // đường dẫn trên theo style scss
+  // -> live server hiểu nhưng open default ko
+  background-image: url("../img/cover.jpg");
+  // Dùng đường dẫn theo css làm gốc sẽ solve được cả default và live
+
   // Kế thừa class
-  //   @extend .backgroundImgClass;
+  // @extend .backgroundImgClass;
   // Cũng có loại kế thừa với tên thẻ, id
   //   @extend #id;
   //   @extend tagName;
 
   @extend %backgroundImg;
   height: 500px;
-
   position: relative;
-  top: 50%;
-  left: 12%;
-  transform: translateY(-50%);
 
   .cover__content {
     max-width: 500px;
+
     position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
     h1 {
       @include styleText($color-white-0, $fs-2, $fw-2);
     }

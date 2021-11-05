@@ -12,3 +12,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+// Sữ khác biệt giữa placeholder với các loại trên
+// Placeholder chỉ được biên dịch khi gọi
+// Các loại class, id, tag sẽ được biên dịch ra trước
+// Dồng thời thêm vào các vị trí sử dụng
+// -> dư 1 bước biên dịch thêm
+// ko có loại extend truyền tham số
