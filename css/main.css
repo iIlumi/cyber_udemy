@@ -37,11 +37,36 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: center;
+  color: #505763;
+  font-size: 600;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.myNavBar .myNavBar__left .myNavBar__categories i {
+  color: #a1a7b3;
 }
 
 .myNavBar .myNavBar__left .myNavBar__form-search {
   -webkit-box-flex: 8;
       -ms-flex-positive: 8;
           flex-grow: 8;
+}
+
+.myNavBar .myNavBar__left .myNavBar__form-search .input-group {
+  background-color: #f2f3f5;
+}
+
+.myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.myNavBar .myNavBar__left .myNavBar__form-search .input-group .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
 }
 /*# sourceMappingURL=main.css.map */

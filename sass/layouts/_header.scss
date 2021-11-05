@@ -21,18 +21,39 @@
       flex-grow: 1;
       text-align: center;
       @include styleText($color-black-light, $fw-1, $fw-0);
-      // Thẻ categories dùng div 
+      // Thẻ categories dùng div
       // -> hover vào ko có dấu bàn tay như a link
       // TODO fix lại
       cursor: pointer;
 
-      i{
+      i {
         color: $color-gray-3;
       }
     }
 
     .myNavBar__form-search {
       flex-grow: 8;
+
+      .input-group {
+        background-color: $color-white-cream;
+        // Set màu của cha và cho các con bên trong là transparent
+
+        .form-control {
+          background-color: transparent;
+          // Thay vì border d-none thì có thể set transparent cũng ok
+          border-color: transparent;
+          // Đè thẳng ko cần thông qua focus
+          box-shadow: none;
+        }
+
+        .input-group-append{
+          .input-group-text{
+            background-color: transparent;
+            border-color: transparent;
+            color: $color-red-0;
+          }
+        }
+      }
     }
   }
 }
