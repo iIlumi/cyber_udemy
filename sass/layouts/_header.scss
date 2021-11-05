@@ -57,75 +57,78 @@
 
 .myNavBar__form-search {
   flex-grow: 8;
+  @include styleFormSearch($color-white-cream,$color-white-0,$color-gray-4)
 }
+// ===mixin===
+// Chuyển thành mixin để dùng cho phần cover chung
+// .myNavBar__form-search .input-group {
+//   background-color: $color-white-cream;
+//   // Set màu của cha và cho các con bên trong là transparent
 
-.myNavBar__form-search .input-group {
-  background-color: $color-white-cream;
-  // Set màu của cha và cho các con bên trong là transparent
+//   .input-group-append {
+//     .input-group-text {
+//       background-color: transparent;
+//       border-color: transparent;
+//       color: $color-red-0;
 
-  .input-group-append {
-    .input-group-text {
-      background-color: transparent;
-      border-color: transparent;
-      color: $color-red-0;
+//       &:hover {
+//         // parent selector chỉ hoạt động nếu sử dụng trong cấp con direct
+//         color: $color-white-0;
+//         background-color: $color-red-0;
+//       }
+//     }
+//   }
+// }
 
-      &:hover {
-        // parent selector chỉ hoạt động nếu sử dụng trong cấp con direct
-        color: $color-white-0;
-        background-color: $color-red-0;
-      }
-    }
-  }
-}
+// .myNavBar__form-search .form-control {
+//   background-color: transparent;
+//   // Thay vì border d-none thì có thể set transparent cũng ok
+//   border-color: transparent;
+//   // Đè thẳng ko cần thông qua focus
+//   box-shadow: none;
+//   // TODO Change parent div based on child div focus
+//   // https://stackoverflow.com/questions/24287192/css-change-parent-on-focus-of-child
+//   // ko hay lắm vì dính thêm button
+//   // Hoặc phải xử lý với javascript
+//   transition: none;
 
-.myNavBar__form-search .form-control {
-  background-color: transparent;
-  // Thay vì border d-none thì có thể set transparent cũng ok
-  border-color: transparent;
-  // Đè thẳng ko cần thông qua focus
-  box-shadow: none;
-  // TODO Change parent div based on child div focus
-  // https://stackoverflow.com/questions/24287192/css-change-parent-on-focus-of-child
-  // ko hay lắm vì dính thêm button
-  // Hoặc phải xử lý với javascript
-  transition: none;
+//   color: $color-black-light;
 
-  color: $color-black-light;
+//   &::placeholder {
+//     color: $color-black-light;
+//   }
 
-  &::placeholder {
-    color: $color-black-light;
-  }
+//   &:focus {
+//     background-color: $color-white-0;
+//     // Cách 1 - 3 side viết tường minh ra
+//     // border-top-color: $color-gray-4;
+//     // border-bottom-color: $color-gray-4;
+//     // border-left-color: $color-gray-4;
+//     // Cách 2 override cạnh còn lại
+//     border-color: $color-gray-4;
+//     border-right-color: transparent;
 
-  &:focus {
-    background-color: $color-white-0;
-    // Cách 1 - 3 side viết tường minh ra
-    // border-top-color: $color-gray-4;
-    // border-bottom-color: $color-gray-4;
-    // border-left-color: $color-gray-4;
-    // Cách 2 override cạnh còn lại
-    border-color: $color-gray-4;
-    border-right-color: transparent;
+//     // & + .input-group-append
+//     // Dùng parent selector tiếp vẫn được nhưng quá nhiều cấp lồng nhau
+//   }
 
-    // & + .input-group-append
-    // Dùng parent selector tiếp vẫn được nhưng quá nhiều cấp lồng nhau
-  }
+//   &:focus + .input-group-append {
+//     // Viết ngay ko đè được ở dưới
+//     // Phải gọi thêm class con để đè
+//     .input-group-text {
+//       background-color: $color-white-0;
+//       border-color: $color-gray-4;
+//       border-left-color: transparent;
 
-  &:focus + .input-group-append {
-    // Viết ngay ko đè được ở dưới
-    // Phải gọi thêm class con để đè
-    .input-group-text {
-      background-color: $color-white-0;
-      border-color: $color-gray-4;
-      border-left-color: transparent;
-
-      // Phải copy lại để đè
-      &:hover {
-        color: $color-white-0;
-        background-color: $color-red-0;
-      }
-    }
-  }
-}
+//       // Phải copy lại để đè
+//       &:hover {
+//         color: $color-white-0;
+//         background-color: $color-red-0;
+//       }
+//     }
+//   }
+// }
+// ===mixin===
 
 // NOTE Header right
 // Chú ý khi làm việc với BS pha3icheck devtool

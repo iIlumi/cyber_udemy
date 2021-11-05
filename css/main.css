@@ -78,18 +78,7 @@ body {
   background-color: #f2f3f5;
 }
 
-.myNavBar__form-search .input-group .input-group-append .input-group-text {
-  background-color: transparent;
-  border-color: transparent;
-  color: #ec5252;
-}
-
-.myNavBar__form-search .input-group .input-group-append .input-group-text:hover {
-  color: #fff;
-  background-color: #ec5252;
-}
-
-.myNavBar__form-search .form-control {
+.myNavBar__form-search .input-group .form-control {
   background-color: transparent;
   border-color: transparent;
   -webkit-box-shadow: none;
@@ -99,35 +88,46 @@ body {
   color: #505763;
 }
 
-.myNavBar__form-search .form-control::-webkit-input-placeholder {
+.myNavBar__form-search .input-group .form-control::-webkit-input-placeholder {
   color: #505763;
 }
 
-.myNavBar__form-search .form-control:-ms-input-placeholder {
+.myNavBar__form-search .input-group .form-control:-ms-input-placeholder {
   color: #505763;
 }
 
-.myNavBar__form-search .form-control::-ms-input-placeholder {
+.myNavBar__form-search .input-group .form-control::-ms-input-placeholder {
   color: #505763;
 }
 
-.myNavBar__form-search .form-control::placeholder {
+.myNavBar__form-search .input-group .form-control::placeholder {
   color: #505763;
 }
 
-.myNavBar__form-search .form-control:focus {
+.myNavBar__form-search .input-group .form-control:focus {
   background-color: #fff;
   border-color: #dedfe0;
   border-right-color: transparent;
 }
 
-.myNavBar__form-search .form-control:focus + .input-group-append .input-group-text {
+.myNavBar__form-search .input-group .form-control:focus + .input-group-append .input-group-text {
   background-color: #fff;
   border-color: #dedfe0;
   border-left-color: transparent;
 }
 
-.myNavBar__form-search .form-control:focus + .input-group-append .input-group-text:hover {
+.myNavBar__form-search .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.myNavBar__form-search .input-group .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+
+.myNavBar__form-search .input-group .input-group-append .input-group-text:hover {
   color: #fff;
   background-color: #ec5252;
 }
@@ -243,7 +243,7 @@ body {
   position: relative;
 }
 
-.cover .cover__content {
+.cover__content {
   max-width: 500px;
   position: absolute;
   top: 50%;
@@ -252,15 +252,73 @@ body {
           transform: translateY(-50%);
 }
 
-.cover .cover__content h1 {
+.cover__content h1 {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
 }
 
-.cover .cover__content p {
+.cover__content p {
   color: #fff;
   font-size: 18px;
   font-weight: normal;
+}
+
+.cover__content .cover__form .input-group {
+  background-color: #fff;
+}
+
+.cover__content .cover__form .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: none;
+  transition: none;
+  color: #505763;
+}
+
+.cover__content .cover__form .input-group .form-control::-webkit-input-placeholder {
+  color: #505763;
+}
+
+.cover__content .cover__form .input-group .form-control:-ms-input-placeholder {
+  color: #505763;
+}
+
+.cover__content .cover__form .input-group .form-control::-ms-input-placeholder {
+  color: #505763;
+}
+
+.cover__content .cover__form .input-group .form-control::placeholder {
+  color: #505763;
+}
+
+.cover__content .cover__form .input-group .form-control:focus {
+  background-color: #fff;
+  border-color: #fff;
+  border-right-color: transparent;
+}
+
+.cover__content .cover__form .input-group .form-control:focus + .input-group-append .input-group-text {
+  background-color: #fff;
+  border-color: #fff;
+  border-left-color: transparent;
+}
+
+.cover__content .cover__form .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.cover__content .cover__form .input-group .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+
+.cover__content .cover__form .input-group .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
 }
 /*# sourceMappingURL=main.css.map */
