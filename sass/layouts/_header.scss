@@ -4,6 +4,10 @@
   // check qua dev tool
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
     0 3px 1px 0 rgba(20, 23, 28, 0.1);
+
+  div:first-child {
+    padding-left: 0;
+  }
 }
 
 // .exBar {
@@ -40,7 +44,7 @@
 .myNavBar__categories {
   flex-grow: 1;
   text-align: center;
-  @include styleText($color-black-light, $fw-1, $fw-0);
+  @include styleText($color-black-light, $fs-1, $fw-0);
   // Thẻ categories dùng div
   // -> hover vào ko có dấu bàn tay như a link
   // TODO fix lại
@@ -135,17 +139,20 @@
       padding: $pd-2 + 2 $pd-2;
       border-radius: $border-radius + 1;
       position: relative;
-      
+
       .nav-link {
-        @include styleText($color-black-light, $fw-1, $fw-0);
+        @include styleText($color-black-light, $fs-1, $fw-0);
       }
 
       &:hover {
         background-color: $color-gray-1;
+        .overlay {
+          display: block;
+        }
       }
 
       .overlay {
-        display: block;
+        display: none;
         width: 330px;
 
         text-align: center;
@@ -185,7 +192,7 @@
       // Tuy nhiên ở đây phải set ở cha vì lấy thuộc tính border radius
       // Nếu ko set line height ở đây thì vô thẻ i trong ko dùng lại 50px dc nữa
       line-height: 20px;
-      
+
       .nav-link {
         // có khoảng cách giữa các toán tử,
         // -> check màu / autoformat

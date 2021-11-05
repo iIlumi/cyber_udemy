@@ -16,6 +16,10 @@ body {
           box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
 }
 
+.myNavBar div:first-child {
+  padding-left: 0;
+}
+
 .myNavBar__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,7 +47,7 @@ body {
           flex-grow: 1;
   text-align: center;
   color: #505763;
-  font-size: 600;
+  font-size: 13px;
   font-weight: normal;
   cursor: pointer;
 }
@@ -133,7 +137,7 @@ body {
 
 .myNavBar__right .navbar-nav .nav-item .nav-link {
   color: #505763;
-  font-size: 600;
+  font-size: 13px;
   font-weight: normal;
 }
 
@@ -141,8 +145,12 @@ body {
   background-color: rgba(20, 23, 28, 0.05);
 }
 
-.myNavBar__right .navbar-nav .nav-item .overlay {
+.myNavBar__right .navbar-nav .nav-item:hover .overlay {
   display: block;
+}
+
+.myNavBar__right .navbar-nav .nav-item .overlay {
+  display: none;
   width: 330px;
   text-align: center;
   padding: 20px;
