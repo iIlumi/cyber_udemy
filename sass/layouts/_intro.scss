@@ -1,0 +1,38 @@
+.intro {
+  // deg âm đi ngược chiều kim, góc IV
+  // Start góc II, end góc IV -> trải màu xéo
+  background: linear-gradient(-45deg, $color-red-0, $color-purple);
+  padding: $pd-3;
+}
+
+.intro .intro__content {
+  // 78% là align bằng mắt, ko canh chuẫn px
+  width: 78%;
+  margin: 0 auto;
+
+  .intro__items {
+    display: flex;
+    align-items: center;
+    // Layout mẫu ko justity conntent center nên tuân theo
+    // Tuy hợp lí hơn nhưng ko dùng cũng ko quá xấu -> oK
+    // justify-content: center;
+  }
+
+  .intro__icon {
+    @include styleText($color-white-0, $fs-6, $fw-3);
+    margin-right: $mg-1;
+  }
+
+  .intro__details {
+    p {
+      // mb do bs thêm vào -> reset lại
+      margin-bottom: 0;
+      &:first-child {
+        @include styleText($color-white-0, $fs-3 - 1, $fw-2);
+      }
+      &:last-child {
+        @include styleText($color-white-0, $fs-0, $fw-0);
+      }
+    }
+  }
+}
