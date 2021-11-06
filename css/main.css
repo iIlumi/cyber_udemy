@@ -434,6 +434,27 @@ body {
           justify-content: space-between;
 }
 
+.jobs {
+  background-color: #f7f8fa;
+}
+
+.jobs__content .row {
+  padding: 10px 0;
+}
+
+.jobs__content .jobs__items {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.jobs__content .jobs__items h2 {
+  color: #505763;
+  font-size: 19px;
+  font-weight: 600;
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
