@@ -397,6 +397,20 @@ body {
           box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
 }
 
+.students {
+  padding: 32px 0;
+}
+
+.students__content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.students__content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
@@ -570,5 +584,40 @@ body {
   color: #29303b;
   font-size: 15px;
   font-weight: 600;
+}
+
+.card--feedback {
+  height: 280px;
+}
+
+.card--feedback .card-body {
+  padding: 2rem;
+}
+
+.card--feedback .card-body .card-text {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.card--feedback .card__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.card--feedback .card__top .card__avatar {
+  margin-right: 15px;
+}
+
+.card--feedback .card__top .card__avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.card--feedback .card__top .card__name {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
