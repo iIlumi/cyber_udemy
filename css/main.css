@@ -287,6 +287,22 @@ footer {
   font-size: 13px;
 }
 
+.footer__bottom {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.footer__bottom img {
+  width: 110px;
+  margin-right: 10px;
+}
+
+.footer__bottom .nav-link {
+  color: #007791;
+  font-size: 13px;
+  font-weight: normal;
+}
+
 .intro {
   background: linear-gradient(-45deg, #ec5252, #6e1a52);
   padding: 20px;

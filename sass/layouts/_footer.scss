@@ -53,3 +53,15 @@ footer {
 .footer__top .btn-group .dropdown-menu {
   font-size: $fs-1;
 }
+
+.footer__bottom {
+  width: 90%;
+  margin: $mg-3 - 2 auto;
+  img {
+    width: 110px;
+    margin-right: $mg-0 + 5;
+  }
+  .nav-link {
+    @include styleText($color-blue-0, $fs-1, $fw-0);
+  }
+}
