@@ -1,0 +1,27 @@
+footer {
+  @include styleText($color-gray-0, $fs-1, $fw-0);
+}
+
+.footer__top {
+  width: 90%;
+  margin: $mg-4 auto;
+
+  ul {
+    height: 110px;
+  }
+}
+
+.footer__top ul .nav-item {
+  // Chú ý vì tính chất của flex sẽ điều vào tối đa nên cần giới hạn lại
+  // Nếu ko dùng flex column của BS thì có thể khai báo flex-direction column
+  flex-basis: 25%;
+  .nav-link {
+    color: $color-blue-0;
+    //   Reset lại padding
+    padding: 0;
+
+    &.bold {
+      font-weight: $fw-2;
+    }
+  }
+}

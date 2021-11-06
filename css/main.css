@@ -236,6 +236,35 @@ body {
   background-color: transparent;
 }
 
+footer {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.footer__top {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.footer__top ul {
+  height: 110px;
+}
+
+.footer__top ul .nav-item {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.footer__top ul .nav-item .nav-link {
+  color: #007791;
+  padding: 0;
+}
+
+.footer__top ul .nav-item .nav-link.bold {
+  font-weight: 700;
+}
+
 .intro {
   background: linear-gradient(-45deg, #ec5252, #6e1a52);
   padding: 20px;

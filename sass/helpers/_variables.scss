@@ -37,10 +37,12 @@ $fw-3: 900;
 $line-height-0: 1.43;
 
 //margin
+// Chênh lệch giá trị > 5 thì nên tạo biến
 $mg-0: 5px;
 $mg-1: 25px;
 $mg-2: 20px;
-$mg-3:32px;
+$mg-3: 32px;
+$mg-4: 40px;
 
 //padding
 $pd-0: 10px;
