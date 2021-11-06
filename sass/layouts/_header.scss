@@ -57,7 +57,7 @@
 
 .myNavBar__form-search {
   flex-grow: 8;
-  @include styleFormSearch($color-white-cream,$color-white-0,$color-gray-4)
+  @include styleFormSearch($color-white-cream, $color-white-0, $color-gray-4);
 }
 // ===mixin===
 // Chuyển thành mixin để dùng cho phần cover chung
@@ -133,90 +133,89 @@
 // NOTE Header right
 // Chú ý khi làm việc với BS pha3icheck devtool
 // Coi selector tn để chọn các đè phù hợp, ngắn đủ
-.myNavBar__right {
-  .navbar-nav {
-    justify-content: space-between;
-    align-items: center;
+.myNavBar__right .navbar-nav {
+  justify-content: space-between;
+  align-items: center;
 
-    .nav-item {
-      padding: $pd-2 + 2 $pd-2;
-      border-radius: $border-radius + 1;
-      position: relative;
+  .nav-item {
+    padding: $pd-2 + 2 $pd-2;
+    border-radius: $border-radius + 1;
+    position: relative;
 
-      .nav-link {
-        @include styleText($color-black-light, $fs-1, $fw-0);
-      }
+    .nav-link {
+      @include styleText($color-black-light, $fs-1, $fw-0);
+    }
 
-      &:hover {
-        background-color: $color-gray-1;
-        .overlay {
-          display: block;
-        }
-      }
-
+    &:hover {
+      background-color: $color-gray-1;
+      
       .overlay {
-        display: none;
-        width: 330px;
-
-        text-align: center;
-        padding: $pd-3;
-
-        background-color: $color-white-0;
-        border-top: 1px solid $color-gray-1;
-        box-shadow: 0 4px 16px $color-gray-5;
-
-        position: absolute;
-        top: 60px;
-        right: 0;
-        z-index: 1;
-
-        &::before {
-          content: "";
-          width: 15px;
-          height: 15px;
-          display: block;
-
-          background-color: $color-white-0;
-          border-top: 1px solid $color-gray-1;
-          border-left: 1px solid $color-gray-1;
-
-          position: absolute;
-          top: -9px;
-          right: 10%;
-          transform: rotate(45deg);
-        }
+        display: block;
       }
     }
+  }
 
-    .myNavBar__cart {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      // Thông thường set line height thẳng cho icon thì sẽ ~ w/h
-      // Tuy nhiên ở đây phải set ở cha vì lấy thuộc tính border radius
-      // Nếu ko set line height ở đây thì vô thẻ i trong ko dùng lại 50px dc nữa
-      line-height: 20px;
+  .myNavBar__cart {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    // Thông thường set line height thẳng cho icon thì sẽ ~ w/h
+    // Tuy nhiên ở đây phải set ở cha vì lấy thuộc tính border radius
+    // Nếu ko set line height ở đây thì vô thẻ i trong ko dùng lại 50px dc nữa
+    line-height: 20px;
 
-      .nav-link {
-        // có khoảng cách giữa các toán tử,
-        // -> check màu / autoformat
-        font-size: $fs-3 + 2;
+    .nav-link {
+      // có khoảng cách giữa các toán tử,
+      // -> check màu / autoformat
+      font-size: $fs-3 + 2;
 
-        // i {
-        //   text-align: center;
-        //   width: 50px;
-        //   height: 50px;
-        //   border-radius: 50%;
-        //   border: 1px solid black;
-        //   line-height: 50px;
-        // }
-      }
+      // i {
+      //   text-align: center;
+      //   width: 50px;
+      //   height: 50px;
+      //   border-radius: 50%;
+      //   border: 1px solid black;
+      //   line-height: 50px;
+      // }
     }
+  }
 
-    .myNavBar__buttons {
-      &:hover {
-        background-color: transparent;
-      }
+  .myNavBar__buttons {
+    &:hover {
+      background-color: transparent;
     }
+  }
+}
+
+.myNavBar__right .overlay {
+  display: none;
+  width: 330px;
+
+  text-align: center;
+  padding: $pd-3;
+
+  background-color: $color-white-0;
+  border-top: 1px solid $color-gray-1;
+  box-shadow: 0 4px 16px $color-gray-5;
+
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+
+    background-color: $color-white-0;
+    border-top: 1px solid $color-gray-1;
+    border-left: 1px solid $color-gray-1;
+
+    position: absolute;
+    top: -9px;
+    right: 10%;
+    transform: rotate(45deg);
   }
 }
