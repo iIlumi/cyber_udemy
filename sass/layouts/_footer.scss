@@ -9,12 +9,18 @@ footer {
   ul {
     height: 110px;
   }
+
+  .btn-group {
+    //   class của BS đang là inline-flex nên ko dùng với text-right được
+    display: block;
+  }
 }
 
 .footer__top ul .nav-item {
   // Chú ý vì tính chất của flex sẽ điều vào tối đa nên cần giới hạn lại
   // Nếu ko dùng flex column của BS thì có thể khai báo flex-direction column
   flex-basis: 25%;
+
   .nav-link {
     color: $color-blue-0;
     //   Reset lại padding
@@ -24,4 +30,26 @@ footer {
       font-weight: $fw-2;
     }
   }
+}
+
+// Chỉ nên css thêm cho btn trong phần footer
+// Mixin chỉ tạo đúng template,
+// Để TH có sử dụng lại kiểu dropdown ở nơi khác
+.footer__top .btn-group .button--dropup {
+  // tránh TH chữ nhiều nên chỉ để min-width, tự cân chỉnh
+  // Tuy nhiên vẫn ko solve được vấn đề thẻ after với ngôn ngữ dài như Indo
+  // TODO  width tùy chỉnh nhưng tính thêm phần after cộng vô ~ 140%
+  min-width: 160px;
+  box-shadow: none;
+  i {
+    padding: 0 $pd-2;
+  }
+
+  &::after {
+    margin-left: 30%;
+  }
+}
+
+.footer__top .btn-group .dropdown-menu {
+  font-size: $fs-1;
 }

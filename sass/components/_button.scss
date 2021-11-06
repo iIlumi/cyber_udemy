@@ -30,3 +30,11 @@
     @include hoverButton($color-white-0, $color-red-1, $color-red-1);
   }
 }
+
+.button--dropup{
+    @include styleButton($color-gray-0,$color-white-0,$color-black-light,$fs-1,$fw-1,$pd-2 + 1,$pd-0);
+    &:hover{
+        @include hoverButton($color-black-0,transparent,$color-black-0);
+    }
+    
+}
