@@ -39,6 +39,7 @@
   border: 1px solid $border-hover;
 }
 
+// Mixin ra hẳn 1 component với các hiệu ứng hover đầy đủ
 @mixin styleFormSearch($bg-color, $bg-color-focus, $border-color) {
   .input-group {
     background-color: $bg-color;
@@ -88,5 +89,24 @@
         }
       }
     }
+  }
+}
+
+// Check if map has value -> assign value of key in map to new var
+// media -> responisve with content
+@mixin responsive($screen) {
+  @if map-has-key($map: $breakpoints, $key: $screen) {
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $screen,
+    );
+    @media screen and (max-width: $value) {
+      // tự gán các code css khi gọi includes ra và gán vào content
+      @content;
+    }
+  } @else {
+    @warn "`{$screen}` is not exist in breakpoints";
+    // Nếu dùng Koala -> sẽ ko hiện thông báo này, có thông báo riêng
+    // Nếu watch sass / gulp / các tool terminal / framework -> báo
   }
 }
