@@ -20,3 +20,9 @@
     @include styleText($color-black-light, $fs-3 + 1, $fw-1);
   }
 }
+
+@include responsive("medium") {
+  .jobs__content .border-right {
+    border-right: none !important;
+  }
+}

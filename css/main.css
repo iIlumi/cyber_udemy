@@ -642,6 +642,12 @@ footer {
   font-weight: 600;
 }
 
+@media screen and (max-width: 768px) {
+  .jobs__content .border-right {
+    border-right: none !important;
+  }
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
