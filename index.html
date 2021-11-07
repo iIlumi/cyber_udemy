@@ -40,7 +40,7 @@
             Row của BS thức chất cugn cấp display flex, nhưng navbar class đã có sẵn nên ko cần wrap col trong row nếu dùng
             Chia 2 col vì sẽ nhắm trước responsive sau này ra 2 vùng
             -->
-        <div class="col-7">
+        <div class="col-xl-7 col-lg-9 col-9">
           <div class="myNavBar__left">
             <a class="navbar-brand" href="#">
               <img src="./img/logo-coral.svg" alt="logo" />
@@ -66,10 +66,11 @@
             </form>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-xl-5 col-lg-3 col-3">
           <div class="myNavBar__right">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+              <!-- Xóa class active đi, thêm class gọi để responsive -->
+              <li class="nav-item myNavBar__connect">
                 <a class="nav-link" href="#">Udemy for Business</a>
                 <div class="overlay">
                   <p>
@@ -79,7 +80,7 @@
                   <a href="#">Try Udemy for Business</a>
                 </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item myNavBar__connect">
                 <a class="nav-link" href="#">Become an Instructor</a>
                 <div class="overlay">
                   <p>

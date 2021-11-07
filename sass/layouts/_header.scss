@@ -219,3 +219,14 @@
     transform: rotate(45deg);
   }
 }
+
+// Tách phần responsive ở cuối để dễ quản lý, dễ đè code
+// Check trong main.css
+// Max-width
+.myNavBar {
+  @include responsive("extra-large") {
+    .myNavBar__connect {
+      display: none;
+    }
+  }
+}
