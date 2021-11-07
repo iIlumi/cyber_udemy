@@ -77,5 +77,20 @@
 
     background-color: $color-gray-7;
     border-radius: $border-radius-0;
+
+    &::before {
+      // do thẻ cùng hàng nên dùng phối hợp block để hiện với inline
+      display: inline-block;
+      content: "";
+      width: 18px;
+      height: 18px;
+
+      background-color: $color-white-0;
+      border-radius: 50%;
+
+      position: absolute;
+      bottom: 4px;
+      left: 4px;
+    }
   }
 }

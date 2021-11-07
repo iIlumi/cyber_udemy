@@ -702,6 +702,18 @@ footer {
   border-radius: 34px;
 }
 
+.sidebarMini .sidebarMini__content .switch .slider::before {
+  display: inline-block;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
