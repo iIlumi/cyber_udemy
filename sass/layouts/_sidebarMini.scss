@@ -60,6 +60,16 @@
 
   input {
     display: none;
+    // Khi label được click vào thì đồng thời input cũng nhận sự kiện check
+    // Dựa vào đây để bất css / js
+    // Tận dụng việc div.slider cùng cấp ngay dưới để selector
+    &:checked + .slider {
+      // Khi này đang selector của slider - & === slider
+      // devtool ko force checked được
+      &::before {
+        transform: translateX(22px);
+      }
+    }
   }
 
   // Style vào switch ở ngoài rồi cho slider là hình tròn
@@ -77,6 +87,8 @@
 
     background-color: $color-gray-7;
     border-radius: $border-radius-0;
+    // UX - thêm pointer khi di chuột vào đối tượng cho user biết
+    cursor: pointer;
 
     &::before {
       // do thẻ cùng hàng nên dùng phối hợp block để hiện với inline
@@ -91,6 +103,8 @@
       position: absolute;
       bottom: 4px;
       left: 4px;
+
+      transition: all 0.3s;
     }
   }
 }

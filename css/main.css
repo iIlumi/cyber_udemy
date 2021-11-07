@@ -692,6 +692,11 @@ footer {
   display: none;
 }
 
+.sidebarMini .sidebarMini__content .switch input:checked + .slider::before {
+  -webkit-transform: translateX(22px);
+          transform: translateX(22px);
+}
+
 .sidebarMini .sidebarMini__content .switch .slider {
   position: absolute;
   top: 0;
@@ -700,6 +705,7 @@ footer {
   bottom: 0;
   background-color: #cccccc;
   border-radius: 34px;
+  cursor: pointer;
 }
 
 .sidebarMini .sidebarMini__content .switch .slider::before {
@@ -712,6 +718,8 @@ footer {
   position: absolute;
   bottom: 4px;
   left: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .button--white {
