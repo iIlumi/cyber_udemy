@@ -1,0 +1,33 @@
+// Đặt trong componetns vẫn Ok
+// Tuy nhiên đặt trong layout để dễ compare
+
+.sidebarMini {
+  //   ko cần set height,
+  //   chiều cao tự đẩy xuống theo nội dung
+  width: 400px;
+
+  //   Cố định trên screen
+  position: fixed;
+  top: 25%;
+  right: 0;
+  z-index: 500;
+
+  background-color: $color-gray-4;
+
+  .sidebarMini__button {
+    @include styleButton(
+      $color-black-0,
+      $color-gray-4,
+      red,
+      $fs-5,
+      $fw-0,
+      $pd-2,
+      $pd-3
+    );
+    border-radius: 8px 0 0 8px;
+
+    // translate đi ra ngoài
+    position: fixed;
+    transform: translateX(-100%);
+  }
+}

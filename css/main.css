@@ -648,6 +648,29 @@ footer {
   }
 }
 
+.sidebarMini {
+  width: 400px;
+  position: fixed;
+  top: 25%;
+  right: 0;
+  z-index: 500;
+  background-color: #dedfe0;
+}
+
+.sidebarMini .sidebarMini__button {
+  color: #29303b;
+  background-color: #dedfe0;
+  border: 1px solid red;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 8px 0 0 8px;
+  position: fixed;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;

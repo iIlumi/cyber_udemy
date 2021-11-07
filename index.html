@@ -34,6 +34,39 @@
   </head>
 
   <body>
+    <!-- 
+    DARK MODE
+      Thường có 2 style: 
+      tạo ra 2 trang light-dark riêng chạy // trên server
+      Dùng css Tùy chỉnh lại giao diện light hiện có
+
+      Dùng style 2 ở layout này
+     -->
+    <!-- 
+       SLIDEBAR MINI
+      Slidebar dark mmod có thể để ở đầu hoặc cuối trang đều OK
+      Là tp đi theo trang web -> ~ modal popup
+      -->
+    <div class="sidebarMini">
+      <button class="sidebarMini__button">
+        <i class="fa fa-cog"></i>
+      </button>
+      <div class="sidebarMini__content">
+        <h2>Dark Mode</h2>
+        <div>
+          <span>Off</span>
+          <!-- 
+              Switch ở giữa thực chất là 1 dạng checkbox 
+              Đưa vào trong thẻ label, value trong for trùng id
+            -->
+          <label class="switch" for="checkbox">
+            <input type="checkbox" name="" id="checkbox">
+            <div class="slider"></div>
+          </label>
+          <span>On</span>
+        </div>
+      </div>
+    </div>
     <header>
       <!-- class md sẽ chuyễn qua flex-direction column ở kích thước đó -->
       <!-- debug phán đoán truy dần thông qua dtool -->
@@ -663,6 +696,7 @@
         </div>
       </div>
     </section>
+
     <section class="banner">
       <div class="container">
         <h2>Learn anytime, anywhere</h2>
@@ -901,6 +935,7 @@
         </div>
       </div>
     </section>
+
     <section class="partners">
       <div class="partners__content">
         <div class="partners__text">
@@ -928,6 +963,7 @@
         </div>
       </div>
     </section>
+
     <section class="jobs">
       <!-- 
             Bọc BS row bằng class container / fluid 
@@ -962,6 +998,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="footer__top">
         <div class="row">
