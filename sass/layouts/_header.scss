@@ -5,7 +5,9 @@
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
     0 3px 1px 0 rgba(20, 23, 28, 0.1);
 
-  div:first-child {
+  // Vì thêm button, thay đổi cấu trúc, ko còn 2 div
+  //  nên đặc tên class để gọi luôn, mặc dù ko dùng nhiều
+  .myNavBar__logo {
     padding-left: 0;
   }
 }
@@ -259,13 +261,23 @@
 // Reformat lại theo style css responsive bình thường
 // Dễ quan sát và đè code hơn
 
-@media screen and (min-width: 1200px) and (max-width: 1355px) {
+// check lại hết phát hiện vùng lỗi, tăng max lên
+// Đúng ra thêm text-align lên chung luôn nhưng theo layout res nên để đây
+@media screen and (min-width: 1200px) and (max-width: 1375px) {
   .myNavBar__right {
     .nav-item {
       white-space: nowrap;
-
+      text-align: center;
       .nav-link {
         font-size: $fs-1 - 1;
+      }
+
+      // phần overlay riêng ở nav right ko wrap
+      // nhưng lại bị code css vùng cha ảnh hưởng vào
+      // Chịu khó check lại toàn bộ,
+      // -> tạo checklist các mục đã xong, chưa xong
+      .overlay {
+        white-space: normal;
       }
     }
   }
@@ -300,6 +312,14 @@
   }
 
   .myNavBar__right {
+    // Xử lý nhanh canh sát bên phải
+    width: 50%;
+    margin-left: auto;
+
+    .navbar-nav {
+      text-align: center;
+    }
+
     .myNavBar__buttons {
       display: none;
     }

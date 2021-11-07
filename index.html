@@ -38,12 +38,39 @@
       <!-- class md sẽ chuyễn qua flex-direction column ở kích thước đó -->
       <!-- debug phán đoán truy dần thông qua dtool -->
       <nav class="myNavBar navbar navbar-expand-md navbar-light">
+        <!-- 
+          Sidebar BS
+          https://bootstrapious.com/p/bootstrap-sidebar
+          BS3, 4 ko có built in
+          Search BS sidebar để kết hợp hoặc dùng các thư viện hỗ trợ
+          link trên là tut giải thích rất chi tiết dễ hiểu
+         -->
+        <!-- TODO fix kích thước đúng 768 ko hiện button -->
+        <div class="d-md-none col-sm-2 col-3">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!-- Phần collapse mặc định của BS ko xài vì sidebar trong layout Udemy là dạng ở bên trái -->
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </div> -->
+        <!-- === -->
+
         <!-- https://getbootstrap.com/docs/4.5/components/navbar/#supported-content 
             Row của BS thức chất cugn cấp display flex, nhưng navbar class đã có sẵn nên ko cần wrap col trong row nếu dùng
             Chia 2 col vì sẽ nhắm trước responsive sau này ra 2 vùng
             -->
         <!-- Thêm 2 class vào để dễ gọi responsive -->
-        <div class="col-xl-7 col-lg-9 col-md-8 col-8 myNavBar__logo">
+        <!-- Kích thước nhỏ nhất thì logo phải nhỏ lại nên col-6 -->
+        <div class="col-xl-7 col-lg-9 col-md-8 col-sm-8 col-6 myNavBar__logo">
           <div class="myNavBar__left">
             <a class="navbar-brand" href="#">
               <img src="./img/logo-coral.svg" alt="logo" />
@@ -69,7 +96,7 @@
             </form>
           </div>
         </div>
-        <div class="col-xl-5 col-lg-3 col-md-4 col-4 myNavBar--reset">
+        <div class="col-xl-5 col-lg-3 col-md-4 col-sm-2 col-3 myNavBar--reset">
           <div class="myNavBar__right">
             <ul class="navbar-nav mr-auto">
               <!-- Xóa class active đi, thêm class gọi để responsive -->
@@ -105,13 +132,6 @@
             </ul>
           </div>
         </div>
-        <!-- Layout mẫu header ko collapse thành nút nên xóa đoạn đó luôn -->
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            </div> -->
       </nav>
     </header>
     <section class="cover">
