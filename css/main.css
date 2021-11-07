@@ -495,6 +495,15 @@ footer {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1350px) {
+  .viewing__content .card .card-body .card-title {
+    color: #29303b;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+
 .banner {
   background: url("../img/udemy-logo-semi-transparent.svg") 0/30% no-repeat, linear-gradient(61deg, #6e1a52, #76c5d6 41%);
   background-blend-mode: overlay;
