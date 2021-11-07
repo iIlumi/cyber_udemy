@@ -594,6 +594,33 @@ footer {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1200px) {
+  .partners__content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .partners__content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partners__content {
+    width: 60%;
+  }
+  .partners__content .partners__imgs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .partners__content .partners__imgs .partners__items {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
 .jobs {
   background-color: #f7f8fa;
 }

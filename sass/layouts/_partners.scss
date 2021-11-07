@@ -16,3 +16,34 @@
     justify-content: space-between;
   }
 }
+
+@include responsive("extra-large") {
+  .partners__content {
+    width: 80%;
+  }
+}
+
+@include responsive("large") {
+  .partners__content {
+    width: 90%;
+  }
+}
+
+@include responsive("medium") {
+  .partners__content {
+    width: 60%;
+
+    .partners__imgs {
+      // Default là no-wrap và các item sẽ ko drop
+      flex-wrap: wrap;
+      
+      .partners__items {
+        // Thẻ con = 50% thẻ cha
+        // Kết hợp với wrap 1 hàng sẽ chỉ có 2 item
+        width: 50%;
+        text-align: center;
+        margin-bottom: $mg-0 + 5;
+      }
+    }
+  }
+}
