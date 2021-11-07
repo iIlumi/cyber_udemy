@@ -53,14 +53,15 @@
       </button>
       <div class="sidebarMini__content">
         <h2>Dark Mode</h2>
-        <div>
+        <!-- Đặt class BS trực tiếp đỡ css -->
+        <div class="d-flex">
           <span>Off</span>
           <!-- 
               Switch ở giữa thực chất là 1 dạng checkbox 
               Đưa vào trong thẻ label, value trong for trùng id
             -->
           <label class="switch" for="checkbox">
-            <input type="checkbox" name="" id="checkbox">
+            <input type="checkbox" name="" id="checkbox" />
             <div class="slider"></div>
           </label>
           <span>On</span>

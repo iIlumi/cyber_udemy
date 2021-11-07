@@ -18,7 +18,7 @@
     @include styleButton(
       $color-black-0,
       $color-gray-4,
-      red,
+      $color-gray-4,
       $fs-5,
       $fw-0,
       $pd-2,
@@ -29,5 +29,53 @@
     // translate đi ra ngoài
     position: fixed;
     transform: translateX(-100%);
+  }
+}
+
+.sidebarMini .sidebarMini__content {
+  width: 150px;
+  padding: $pd-3;
+
+  text-align: center;
+
+  // h2 do bị ảnh hưởng từ BS nên phải gọi tên cụ thể vào
+  // ko khai báo ở trên sidebarMini__content được
+  h2 {
+    font-size: $fs-0;
+  }
+}
+
+.sidebarMini .sidebarMini__content .switch {
+  height: 25px;
+  width: 50px;
+  position: relative;
+
+  margin: 0 $mg-0 + 5;
+
+  // Thông thường các input sẽ được ẩn đi
+  // Style vào phần label -> xem như 1 div-inline giả, dễ custom
+  // Input đi kèm nhiều thuộc tính cố định của html ko nên đụng
+  // Khi click vào -> thực chất click vào label đã dc css
+  // Vì chung id với check box nên theo html thì cũng là click vào checkbox
+
+  input {
+    display: none;
+  }
+
+  // Style vào switch ở ngoài rồi cho slider là hình tròn
+  // Hoặc style tất cả vào slider chiếm trọn kích thước switch
+  .slider {
+    // Slide ko có nội dung nên muốn hiện phải có w-h
+    // Phủ lên cha nên phải có top0 left0
+
+    // Hoặc có thể phủ toàn bộ cha bằng t-r-l-b-0
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: $color-gray-7;
+    border-radius: $border-radius-0;
   }
 }
