@@ -272,6 +272,16 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .myNavBar__left .myNavBar__categories,
+  .myNavBar__left .myNavBar__form-search {
+    display: none;
+  }
+  .myNavBar__right .myNavBar__buttons {
+    display: none;
+  }
+}
+
 footer {
   color: #686f7a;
   font-size: 13px;

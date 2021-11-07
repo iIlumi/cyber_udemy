@@ -282,10 +282,26 @@
   .myNavBar__connect {
     display: none;
   }
-  
+
   .myNavBar__right {
     .navbar-nav {
       justify-content: space-around;
+    }
+  }
+}
+
+// max-w: 768
+@include responsive("medium") {
+  .myNavBar__left {
+    .myNavBar__categories,
+    .myNavBar__form-search {
+      display: none;
+    }
+  }
+
+  .myNavBar__right {
+    .myNavBar__buttons {
+      display: none;
     }
   }
 }

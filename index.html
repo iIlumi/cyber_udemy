@@ -35,13 +35,15 @@
 
   <body>
     <header>
-      <nav class="myNavBar navbar navbar-expand-lg navbar-light">
+      <!-- class md sẽ chuyễn qua flex-direction column ở kích thước đó -->
+      <!-- debug phán đoán truy dần thông qua dtool -->
+      <nav class="myNavBar navbar navbar-expand-md navbar-light">
         <!-- https://getbootstrap.com/docs/4.5/components/navbar/#supported-content 
             Row của BS thức chất cugn cấp display flex, nhưng navbar class đã có sẵn nên ko cần wrap col trong row nếu dùng
             Chia 2 col vì sẽ nhắm trước responsive sau này ra 2 vùng
             -->
         <!-- Thêm 2 class vào để dễ gọi responsive -->
-        <div class="col-xl-7 col-lg-9 col-9 myNavBar__logo">
+        <div class="col-xl-7 col-lg-9 col-md-8 col-8 myNavBar__logo">
           <div class="myNavBar__left">
             <a class="navbar-brand" href="#">
               <img src="./img/logo-coral.svg" alt="logo" />
@@ -67,7 +69,7 @@
             </form>
           </div>
         </div>
-        <div class="col-xl-5 col-lg-3 col-3 myNavBar--reset">
+        <div class="col-xl-5 col-lg-3 col-md-4 col-4 myNavBar--reset">
           <div class="myNavBar__right">
             <ul class="navbar-nav mr-auto">
               <!-- Xóa class active đi, thêm class gọi để responsive -->
