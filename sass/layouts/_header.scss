@@ -259,9 +259,33 @@
 // Reformat lại theo style css responsive bình thường
 // Dễ quan sát và đè code hơn
 
+@media screen and (min-width: 1200px) and (max-width: 1355px) {
+  .myNavBar__right {
+    .nav-item {
+      white-space: nowrap;
 
+      .nav-link {
+        font-size: $fs-1 - 1;
+      }
+    }
+  }
+
+  // Nếu class name gọi theo nguyên tắc BEM và chỉ css div đó
+  // -> thì gọi trực tiếp Ok
+  .myNavBar--reset {
+    padding-left: 0;
+  }
+}
+
+// max-w: 1200
 @include responsive("extra-large") {
   .myNavBar__connect {
     display: none;
+  }
+  
+  .myNavBar__right {
+    .navbar-nav {
+      justify-content: space-around;
+    }
   }
 }

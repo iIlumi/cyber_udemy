@@ -250,9 +250,25 @@ body {
           transform: rotate(45deg);
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1355px) {
+  .myNavBar__right .nav-item {
+    white-space: nowrap;
+  }
+  .myNavBar__right .nav-item .nav-link {
+    font-size: 12px;
+  }
+  .myNavBar--reset {
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .myNavBar__connect {
     display: none;
+  }
+  .myNavBar__right .navbar-nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
