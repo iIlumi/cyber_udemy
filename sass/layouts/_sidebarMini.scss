@@ -13,26 +13,44 @@
   z-index: 500;
 
   background-color: $color-gray-4;
+  
+  // Có 1 viền nhỏ nên thêm border để lấp đi phần này
+  // Ko thêm border cho icon vì icon lấy sidebar làm chuân
+  border-right: 1px solid $color-gray-4;
 
-  .sidebarMini__button {
-    @include styleButton(
-      $color-black-0,
-      $color-gray-4,
-      $color-gray-4,
-      $fs-5,
-      $fw-0,
-      $pd-2,
-      $pd-3
-    );
-    border-radius: 8px 0 0 8px;
+  // Ẫn đi khi ở trạng thái bình thường
+  // Dùng js toggle class ẩn hiện khi click vào icon qua sự kiện
+  transform: translateX(100%);
+  transition: all 0.3s;
 
-    // translate đi ra ngoài
-    position: fixed;
-    transform: translateX(-100%);
+  // class is-open sẽ được thêm bằng js
+  &.is-opened {
+    transform: translateX(60%);
   }
 }
 
-.sidebarMini .sidebarMini__content {
+.sidebarMini__button {
+  @include styleButton(
+    $color-black-0,
+    $color-gray-4,
+    $color-gray-4,
+    $fs-5,
+    $fw-0,
+    $pd-2,
+    $pd-3
+  );
+  border-radius: 8px 0 0 8px;
+
+  // translate đi ra ngoài
+  position: fixed;
+  transform: translateX(-100%);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.sidebarMini__content {
   width: 150px;
   padding: $pd-3;
 
@@ -45,7 +63,7 @@
   }
 }
 
-.sidebarMini .sidebarMini__content .switch {
+.sidebarMini__content .switch {
   height: 25px;
   width: 50px;
   position: relative;

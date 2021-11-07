@@ -19,3 +19,11 @@ const truncateCardTitle = () => {
 
 const truncateString = (str, num) =>
   str.length > num ? str.slice(0, num) + "..." : str;
+
+// Sidebar Mini
+const toggleBtn = document.querySelector(".sidebarMini__button");
+const sidebarMini = document.querySelector(".sidebarMini");
+
+toggleBtn.addEventListener("click", function () {
+  sidebarMini.classList.toggle("is-opened");
+});

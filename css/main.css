@@ -655,9 +655,19 @@ footer {
   right: 0;
   z-index: 500;
   background-color: #dedfe0;
+  border-right: 1px solid #dedfe0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.sidebarMini .sidebarMini__button {
+.sidebarMini.is-opened {
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+}
+
+.sidebarMini__button {
   color: #29303b;
   background-color: #dedfe0;
   border: 1px solid #dedfe0;
@@ -671,33 +681,37 @@ footer {
           transform: translateX(-100%);
 }
 
-.sidebarMini .sidebarMini__content {
+.sidebarMini__button:focus {
+  outline: none;
+}
+
+.sidebarMini__content {
   width: 150px;
   padding: 20px;
   text-align: center;
 }
 
-.sidebarMini .sidebarMini__content h2 {
+.sidebarMini__content h2 {
   font-size: 15px;
 }
 
-.sidebarMini .sidebarMini__content .switch {
+.sidebarMini__content .switch {
   height: 25px;
   width: 50px;
   position: relative;
   margin: 0 10px;
 }
 
-.sidebarMini .sidebarMini__content .switch input {
+.sidebarMini__content .switch input {
   display: none;
 }
 
-.sidebarMini .sidebarMini__content .switch input:checked + .slider::before {
+.sidebarMini__content .switch input:checked + .slider::before {
   -webkit-transform: translateX(22px);
           transform: translateX(22px);
 }
 
-.sidebarMini .sidebarMini__content .switch .slider {
+.sidebarMini__content .switch .slider {
   position: absolute;
   top: 0;
   left: 0;
@@ -708,7 +722,7 @@ footer {
   cursor: pointer;
 }
 
-.sidebarMini .sidebarMini__content .switch .slider::before {
+.sidebarMini__content .switch .slider::before {
   display: inline-block;
   content: "";
   width: 18px;
