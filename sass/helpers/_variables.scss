@@ -59,6 +59,8 @@ $border-radius: 2px;
 // https://getbootstrap.com/docs/4.5/layout/grid/#grid-options
 
 $breakpoints: (
+  "screen-1": 1350px,
+  // Thêm 1 biến màn hình để resp vùng course
   "extra-large": 1200px,
   "large": 992px,
   "medium": 768px,

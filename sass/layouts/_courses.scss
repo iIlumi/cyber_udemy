@@ -47,3 +47,32 @@
     }
   }
 }
+
+// Kết hợp thêm việc chia lại khoảng cách giữa các ele trong card
+// Giúp chữ ko bị drop
+// Cách chỉnh margin trong resp của owl ko solve được hoàn toàn
+// Dùng cả 2
+
+// Chú ý khi debug
+// js load của owl và cả js truncate riêng
+// ở mỗi kích thước phải dừng lại chờ load xong
+// debug khá mất thời gian
+// khi set kích thước phải lưu ý có thể bị tác động phá ngược lại layout ở màn lớn
+
+@include responsive("screen-1") {
+  .courses__content .card .card-body {
+    .card-title {
+      @include styleText($color-black-0, $fs-1, $fw-1);
+      margin-bottom: $mg-0 + 5;
+    }
+  }
+}
+
+@include responsive("medium") {
+  // Phải đè 3 cấp mới đủ override css trước
+  .courses .courses__content {
+    .courses__left {
+      padding: $pd-3;
+    }
+  }
+}

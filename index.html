@@ -134,6 +134,7 @@
         </div>
       </nav>
     </header>
+
     <section class="cover">
       <div class="cover__content">
         <h1>Learn on your schedule</h1>
@@ -157,6 +158,7 @@
         </form>
       </div>
     </section>
+
     <section class="intro">
       <div class="intro__content">
         <div class="row">
@@ -196,10 +198,11 @@
         </div>
       </div>
     </section>
+
     <section class="courses">
       <div class="courses__content">
         <div class="row">
-          <div class="col-4 courses__left">
+          <div class="col-xl-4 col-md-3 col-12 courses__left">
             <div>
               <h2>The world’s largest selection of courses</h2>
               <p>
@@ -208,7 +211,7 @@
               </p>
             </div>
           </div>
-          <div class="col-8">
+          <div class="col-xl-8 col-md-9 col-12">
             <!-- https://getbootstrap.com/docs/4.4/components/navs/#javascript-behavior
                     Chú ý idf trong nav-tabs có -tab ở sau
                     Phân biệt khác id với phần tab-content
@@ -486,6 +489,7 @@
         </div>
       </div>
     </section>
+
     <section class="viewing">
       <div class="viewing__content">
         <h2>Students are viewing</h2>
@@ -1091,15 +1095,25 @@
         margin: 15,
         nav: true,
         dots: false,
+        // Cách 1: Thêm margin ở các vùng kích thước khác nhau
+        // -> Chứa được nhiều nội dung hơn
+        // -> chữ ko bị drop
         responsive: {
           0: {
-            items: 1,
+            items: 2,
+            margin: 5,
           },
           600: {
             items: 3,
+            margin: 5,
           },
           1000: {
             items: 4,
+            margin: 5,
+          },
+          1450: {
+            items: 4,
+            margin: 15,
           },
         },
       });

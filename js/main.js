@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
 const truncateCardTitle = () => {
   Array.from(document.getElementsByClassName("card-title")).forEach(
     (cardList) => {
-      cardList.innerHTML = truncateString(cardList.innerHTML, 35);
+      cardList.innerHTML = truncateString(cardList.innerHTML.trim(), 35);
     }
   );
 };

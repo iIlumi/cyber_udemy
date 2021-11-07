@@ -467,6 +467,21 @@ footer {
   border-bottom: 5px solid #007791;
 }
 
+@media screen and (max-width: 1350px) {
+  .courses__content .card .card-body .card-title {
+    color: #29303b;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .courses .courses__content .courses__left {
+    padding: 20px;
+  }
+}
+
 .viewing {
   padding: 22px 0;
 }
