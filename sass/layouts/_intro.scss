@@ -5,7 +5,7 @@
   padding: $pd-3;
 }
 
-.intro .intro__content {
+.intro__content {
   // 78% là align bằng mắt, ko canh chuẫn px
   width: 78%;
   margin: 0 auto;
@@ -34,5 +34,19 @@
         @include styleText($color-white-0, $fs-0, $fw-0);
       }
     }
+  }
+}
+
+@include responsive("extra-large") {
+  .intro__content {
+    .intro__icon {
+      display: none;
+    }
+  }
+}
+
+@include responsive("medium") {
+  .intro {
+    display: none;
   }
 }

@@ -365,12 +365,12 @@ footer {
   padding: 20px;
 }
 
-.intro .intro__content {
+.intro__content {
   width: 78%;
   margin: 0 auto;
 }
 
-.intro .intro__content .intro__items {
+.intro__content .intro__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,27 +379,39 @@ footer {
           align-items: center;
 }
 
-.intro .intro__content .intro__icon {
+.intro__content .intro__icon {
   color: #fff;
   font-size: 50px;
   font-weight: 900;
   margin-right: 25px;
 }
 
-.intro .intro__content .intro__details p {
+.intro__content .intro__details p {
   margin-bottom: 0;
 }
 
-.intro .intro__content .intro__details p:first-child {
+.intro__content .intro__details p:first-child {
   color: #fff;
   font-size: 17px;
   font-weight: 700;
 }
 
-.intro .intro__content .intro__details p:last-child {
+.intro__content .intro__details p:last-child {
   color: #fff;
   font-size: 15px;
   font-weight: normal;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro__content .intro__icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    display: none;
+  }
 }
 
 .courses {
@@ -710,6 +722,13 @@ footer {
 .cover__content .cover__form .input-group .input-group-append .input-group-text:hover {
   color: #fff;
   background-color: #ec5252;
+}
+
+@media screen and (max-width: 576px) {
+  .cover__content {
+    max-width: 400px;
+    left: 10%;
+  }
 }
 
 .card {
