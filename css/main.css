@@ -171,38 +171,52 @@ body {
           align-items: center;
 }
 
-.myNavBar__right .navbar-nav .nav-item {
+.myNavBar__right .nav-item {
   padding: 7px 5px;
   border-radius: 3px;
   position: relative;
 }
 
-.myNavBar__right .navbar-nav .nav-item .nav-link {
+.myNavBar__right .nav-item .nav-link {
   color: #505763;
   font-size: 13px;
   font-weight: normal;
 }
 
-.myNavBar__right .navbar-nav .nav-item:hover {
+.myNavBar__right .nav-item:hover {
   background-color: rgba(20, 23, 28, 0.05);
 }
 
-.myNavBar__right .navbar-nav .nav-item:hover .overlay {
+.myNavBar__right .nav-item:hover .overlay {
   display: block;
 }
 
-.myNavBar__right .navbar-nav .myNavBar__cart {
+.myNavBar__right .myNavBar__cart {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   line-height: 20px;
 }
 
-.myNavBar__right .navbar-nav .myNavBar__cart .nav-link {
+.myNavBar__right .myNavBar__cart .nav-link {
   font-size: 20px;
 }
 
-.myNavBar__right .navbar-nav .myNavBar__buttons:hover {
+.myNavBar__right .myNavBar__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.myNavBar__right .myNavBar__buttons .button {
+  white-space: nowrap;
+}
+
+.myNavBar__right .myNavBar__buttons .button--white {
+  margin-right: 5px;
+}
+
+.myNavBar__right .myNavBar__buttons:hover {
   background-color: transparent;
 }
 
@@ -237,7 +251,7 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .myNavBar .myNavBar__connect {
+  .myNavBar__connect {
     display: none;
   }
 }

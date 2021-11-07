@@ -133,9 +133,11 @@
 // NOTE Header right
 // Chú ý khi làm việc với BS pha3icheck devtool
 // Coi selector tn để chọn các đè phù hợp, ngắn đủ
-.myNavBar__right .navbar-nav {
-  justify-content: space-between;
-  align-items: center;
+.myNavBar__right {
+  .navbar-nav {
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .nav-item {
     padding: $pd-2 + 2 $pd-2;
@@ -181,52 +183,85 @@
   }
 
   .myNavBar__buttons {
+    // Fix việc 2 button bị drop hàng
+    display: flex;
+
+    // Cẩn thận nowrap sẽ đẩy các phần tử phía sau
+    // có thể lố vùng content - lệch layout, tạo scroll ngang
+    // phải dev check giao diện kích thước
+    // sẽ phải chọn giữa 2 opt: đưa vô respon vùng minmax hoặc chỉnh chung
+
+    // -> Bố cưc 2 nút trên giao diện có thể chỉnh chung ko ảnh hưởng
+    // Tuy nhiên 2 nút connect sẽ bị và phải resp minmax riêng
+    .button {
+      white-space: nowrap;
+    }
+
+    .button--white {
+      margin-right: $mg-0;
+    }
+
     &:hover {
       background-color: transparent;
     }
   }
-}
 
-.myNavBar__right .overlay {
-  display: none;
-  width: 330px;
+  .overlay {
+    display: none;
+    width: 330px;
 
-  text-align: center;
-  padding: $pd-3;
-
-  background-color: $color-white-0;
-  border-top: 1px solid $color-gray-1;
-  box-shadow: 0 4px 16px $color-gray-5;
-
-  position: absolute;
-  top: 60px;
-  right: 0;
-  z-index: 1;
-
-  &::before {
-    content: "";
-    width: 15px;
-    height: 15px;
-    display: block;
+    text-align: center;
+    padding: $pd-3;
 
     background-color: $color-white-0;
     border-top: 1px solid $color-gray-1;
-    border-left: 1px solid $color-gray-1;
+    box-shadow: 0 4px 16px $color-gray-5;
 
     position: absolute;
-    top: -9px;
-    right: 10%;
-    transform: rotate(45deg);
+    top: 60px;
+    right: 0;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      display: block;
+
+      background-color: $color-white-0;
+      border-top: 1px solid $color-gray-1;
+      border-left: 1px solid $color-gray-1;
+
+      position: absolute;
+      top: -9px;
+      right: 10%;
+      transform: rotate(45deg);
+    }
   }
 }
+
+// NOTE responsive
+// Nguyên tắc kích thước lớn đặt lên trước
+// -> Vùng set đặc biệt nên để lên trên
+
+// Có thể tạo mixin cho min max
+// tuy nhiên nếu chỉ duy nhất 1 nơi bị ảnh hưởng thì code thẳng ok
+
+// Ở đây vùng 2 nút connect nếu set no wrap theo thì
+// 1 : padding nhỏ gây lệch bố cục khi màn lớn hơn
+// 2 : chữ nhỏ ko đẹp layout, sai layout
+// -> phải chọn option respon riêng
 
 // Tách phần responsive ở cuối để dễ quản lý, dễ đè code
 // Check trong main.css
 // Max-width
-.myNavBar {
-  @include responsive("extra-large") {
-    .myNavBar__connect {
-      display: none;
-    }
+
+// Reformat lại theo style css responsive bình thường
+// Dễ quan sát và đè code hơn
+
+
+@include responsive("extra-large") {
+  .myNavBar__connect {
+    display: none;
   }
 }
