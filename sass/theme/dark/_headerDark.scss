@@ -36,24 +36,44 @@
       }
     }
   }
+}
 
-  .myNavBar__right {
-    .nav-item {
-      // Việc chuyển từ ko border sang có border khi hover sẽ bị lệch nhẹ item
-      // Solve bằng biệc set 1 border cùng kích thước nhưng transparent trước
-      // Border khi xuất hiện sẽ ko ảnh hưởng kích thước    
-      border: 1px solid transparent;
+.darkMode .myNavBar__right {
+  .nav-item {
+    // Việc chuyển từ ko border sang có border khi hover sẽ bị lệch nhẹ item
+    // Solve bằng biệc set 1 border cùng kích thước nhưng transparent trước
+    // Border khi xuất hiện sẽ ko ảnh hưởng kích thước
+    border: 1px solid transparent;
 
-      .nav-link {
-        color: $color-dark-5;
-      }
+    .nav-link {
+      color: $color-dark-5;
+    }
 
-      &:hover {
-        background-color: $color-dark-0;
-        // Chú ý file gốc ko gọi border-color mà gọi bằng border
-        // Darkmode cũng phải gọi lại giống vậy đề đè
-        border: 1px solid $color-dark-2;
-      }
+    &:hover {
+      background-color: $color-dark-0;
+      // Chú ý file gốc ko gọi border-color mà gọi bằng border
+      // Darkmode cũng phải gọi lại giống vậy đề đè
+      border: 1px solid $color-dark-2;
+    }
+  }
+
+  .overlay {
+    background-color: $color-dark-4;
+    border: 1px solid $color-dark-2;
+
+    &::before {
+      background-color: $color-dark-4;
+      border-top: 1px solid $color-dark-2;
+      border-left: 1px solid $color-dark-2;
+    }
+  }
+  // 2 button trong dark mode như cũ
+  // Tuy nhiên div bọc 2 button có vùng border bao quanh và bgc
+  // -> ảnh hưởng từ nav-item:hover set ở trên nav_right
+  .myNavBar__buttons {
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
     }
   }
 }
