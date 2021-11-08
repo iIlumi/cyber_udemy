@@ -1162,4 +1162,41 @@ body.darkMode {
   background-color: #152e4d;
   border: 1px solid #344050;
 }
+
+.darkMode .card {
+  background-color: #152e4d;
+  border: 1px solid #344050;
+}
+
+.darkMode .card .card-body .card-title {
+  color: #d8e2ef;
+}
+
+.darkMode .card .card-body .card-text {
+  color: #9da9bb;
+}
+
+.darkMode .card .card-body .card__stars .card__rate {
+  color: #d8e2ef;
+}
+
+.darkMode .card .card-body .card__stars .card__total {
+  color: #9da9bb;
+}
+
+.darkMode .card .card-body .card__price span:first-child {
+  color: #9da9bb;
+}
+
+.darkMode .card .card-body .card__price span:last-child {
+  color: #d8e2ef;
+}
+
+.darkMode .card--feedback {
+  background-color: #0e1c2f;
+}
+
+.darkMode .card--feedback .card-body .card__name {
+  color: #d8e2ef;
+}
 /*# sourceMappingURL=main.css.map */
