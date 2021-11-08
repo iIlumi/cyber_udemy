@@ -1,0 +1,9 @@
+// Chú ý ghi ngược thứ tự lại darkmode trước body bên trong ko được
+// Parent selector & khi đó là darkmodebody !
+
+body {
+  &.darkMode {
+    color: $color-dark-3;
+    background-color: $color-dark-1;
+  }
+}

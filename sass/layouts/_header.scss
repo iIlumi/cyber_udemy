@@ -31,6 +31,14 @@
   // Khi này form search bị chuyển thành inline
   // -> sẽ ko chiến trọn phần còn lại nữa
   align-items: center;
+
+  .logo-black {
+    display: inline-block;
+  }
+  .logo-white {
+    // block sẽ dư 1 khoảng margin ra vì chiếm trọn div cha
+    display: none;
+  }
 }
 
 .myNavBar__left .navbar-brand {
@@ -268,7 +276,7 @@
     .nav-item {
       white-space: nowrap;
       text-align: center;
-      
+
       .nav-link {
         font-size: $fs-1 - 1;
       }

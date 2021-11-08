@@ -71,6 +71,14 @@ body {
           align-items: center;
 }
 
+.myNavBar__left .logo-black {
+  display: inline-block;
+}
+
+.myNavBar__left .logo-white {
+  display: none;
+}
+
 .myNavBar__left .navbar-brand {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -971,6 +979,11 @@ footer {
   margin-bottom: 0;
 }
 
+body.darkMode {
+  color: #9da9bb;
+  background-color: #061325;
+}
+
 .darkMode .sidebarMini {
   background-color: #152e4d;
   color: #fff;
@@ -987,5 +1000,17 @@ footer {
   background-color: #061325;
   -webkit-box-shadow: 0 0 2px 3px #344050;
           box-shadow: 0 0 2px 3px #344050;
+}
+
+.darkMode .myNavBar {
+  background-color: #0e1c2f;
+}
+
+.darkMode .myNavBar__left .logo-black {
+  display: none;
+}
+
+.darkMode .myNavBar__left .logo-white {
+  display: inline-block;
 }
 /*# sourceMappingURL=main.css.map */
