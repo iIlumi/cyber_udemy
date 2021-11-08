@@ -1,0 +1,30 @@
+.darkMode {
+  .courses__content {
+    .courses__left {
+      background-color: $color-dark-6;
+
+      h2 {
+        //mixin text 1 cấp duy nhất nên gọi đè trực tiếp bằng thuộc tính được
+        color: $color-dark-5;
+      }
+    }
+  }
+
+  #myTab {
+    .nav-link {
+      color: $color-dark-3;
+
+      &.active {
+        background-color: transparent;
+      }
+
+      &:hover {
+        color: $color-dark-5;
+      }
+    }
+
+    .nav-tabs {
+      border-bottom: 1px solid $color-dark-2;
+    }
+  }
+}

@@ -426,17 +426,17 @@ footer {
   margin: 25px 0;
 }
 
-.courses .courses__content {
+.courses__content {
   width: 90%;
   margin: auto;
 }
 
-.courses .courses__content .row {
+.courses__content .row {
   margin-right: 0;
   margin-left: 0;
 }
 
-.courses .courses__content .courses__left {
+.courses__content .courses__left {
   background-color: rgba(20, 23, 28, 0.05);
   padding: 0 2rem;
   display: -webkit-box;
@@ -447,7 +447,7 @@ footer {
           align-items: center;
 }
 
-.courses .courses__content .courses__left h2 {
+.courses__content .courses__left h2 {
   color: #29303b;
   font-size: 19px;
   font-weight: normal;
@@ -1131,6 +1131,30 @@ body.darkMode {
 .darkMode .myNavBar__right .myNavBar__buttons:hover {
   background-color: transparent;
   border-color: transparent;
+}
+
+.darkMode .courses__content .courses__left {
+  background-color: #132238;
+}
+
+.darkMode .courses__content .courses__left h2 {
+  color: #d8e2ef;
+}
+
+.darkMode #myTab .nav-link {
+  color: #9da9bb;
+}
+
+.darkMode #myTab .nav-link.active {
+  background-color: transparent;
+}
+
+.darkMode #myTab .nav-link:hover {
+  color: #d8e2ef;
+}
+
+.darkMode #myTab .nav-tabs {
+  border-bottom: 1px solid #344050;
 }
 
 .darkMode .button--white:hover {
