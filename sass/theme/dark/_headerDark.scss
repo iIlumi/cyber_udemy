@@ -1,6 +1,11 @@
 .darkMode {
   .myNavBar {
     background-color: $color-dark-4;
+
+    // NOTE Phải check lại cả responsive khi ở dark theme
+    .navbar-toggler{
+        background-color: $color-dark-5;
+    }
   }
 
   .myNavBar__left {

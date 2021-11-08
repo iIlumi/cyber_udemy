@@ -16,7 +16,7 @@
 
   // Có 1 viền nhỏ nên thêm border để lấp đi phần này
   // Ko thêm border cho icon vì icon lấy sidebar làm chuân
-  border-right: 1px solid $color-gray-4;
+  border-left: 1px solid $color-gray-4;
 
   // Ẫn đi khi ở trạng thái bình thường
   // Dùng js toggle class ẩn hiện khi click vào icon qua sự kiện

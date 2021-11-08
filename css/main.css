@@ -663,7 +663,7 @@ footer {
   right: 0;
   z-index: 500;
   background-color: #dedfe0;
-  border-right: 1px solid #dedfe0;
+  border-left: 1px solid #dedfe0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: all 0.3s;
@@ -1006,6 +1006,10 @@ body.darkMode {
   background-color: #0e1c2f;
 }
 
+.darkMode .myNavBar .navbar-toggler {
+  background-color: #d8e2ef;
+}
+
 .darkMode .myNavBar__left .logo-black {
   display: none;
 }
@@ -1127,5 +1131,11 @@ body.darkMode {
 .darkMode .myNavBar__right .myNavBar__buttons:hover {
   background-color: transparent;
   border-color: transparent;
+}
+
+.darkMode .button--white:hover {
+  color: #d8e2ef;
+  background-color: #152e4d;
+  border: 1px solid #344050;
 }
 /*# sourceMappingURL=main.css.map */
