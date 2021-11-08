@@ -27,3 +27,9 @@ const sidebarMini = document.querySelector(".sidebarMini");
 toggleBtn.addEventListener("click", function () {
   sidebarMini.classList.toggle("is-opened");
 });
+
+// Dark mode
+const switchBtn = document.querySelector("#checkbox");
+switchBtn.addEventListener("click", function () {
+  document.querySelector("body").classList.toggle("darkMode");
+});

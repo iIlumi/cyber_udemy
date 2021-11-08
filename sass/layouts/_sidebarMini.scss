@@ -13,7 +13,7 @@
   z-index: 500;
 
   background-color: $color-gray-4;
-  
+
   // Có 1 viền nhỏ nên thêm border để lấp đi phần này
   // Ko thêm border cho icon vì icon lấy sidebar làm chuân
   border-right: 1px solid $color-gray-4;
@@ -44,6 +44,9 @@
   // translate đi ra ngoài
   position: fixed;
   transform: translateX(-100%);
+
+  // transition khi đổi màu dark theme
+  transition: all 0.3s;
 
   &:focus {
     outline: none;
