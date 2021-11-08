@@ -1,0 +1,19 @@
+.darkMode {
+  .jobs {
+    background-color: $color-dark-6;
+  }
+
+  .jobs__content {
+    .jobs__items {
+      h2 {
+        color: $color-dark-5;
+      }
+    }
+
+    // border-right là class của BS
+    // Phải đè !important 
+    .border-right {
+      border-right: 1px solid $color-dark-2 !important;
+    }
+  }
+}

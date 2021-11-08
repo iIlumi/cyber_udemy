@@ -1173,6 +1173,30 @@ body.darkMode {
           box-shadow: 0 0 3px 2px #152e4d;
 }
 
+.darkMode .students {
+  background-color: #132238;
+}
+
+.darkMode .students__content h2 {
+  color: #d8e2ef;
+}
+
+.darkMode .partners {
+  background-color: #132238;
+}
+
+.darkMode .jobs {
+  background-color: #132238;
+}
+
+.darkMode .jobs__content .jobs__items h2 {
+  color: #d8e2ef;
+}
+
+.darkMode .jobs__content .border-right {
+  border-right: 1px solid #344050 !important;
+}
+
 .darkMode .button--white:hover {
   color: #d8e2ef;
   background-color: #152e4d;
