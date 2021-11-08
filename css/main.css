@@ -1099,4 +1099,17 @@ body.darkMode {
 .darkMode .myNavBar__form-search .input-group .form-control::placeholder {
   color: #d8e2ef;
 }
+
+.darkMode .myNavBar__right .nav-item {
+  border: 1px solid transparent;
+}
+
+.darkMode .myNavBar__right .nav-item .nav-link {
+  color: #d8e2ef;
+}
+
+.darkMode .myNavBar__right .nav-item:hover {
+  background-color: #152e4d;
+  border: 1px solid #344050;
+}
 /*# sourceMappingURL=main.css.map */
