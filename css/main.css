@@ -1157,6 +1157,22 @@ body.darkMode {
   border-bottom: 1px solid #344050;
 }
 
+.darkMode .categories__content h2 {
+  color: #d8e2ef;
+}
+
+.darkMode .categories__items {
+  background-color: #132238;
+  border-color: #344050;
+  -webkit-box-shadow: 0 3px 1px 0 #152e4d;
+          box-shadow: 0 3px 1px 0 #152e4d;
+}
+
+.darkMode .categories__items:hover {
+  -webkit-box-shadow: 0 0 3px 2px #152e4d;
+          box-shadow: 0 0 3px 2px #152e4d;
+}
+
 .darkMode .button--white:hover {
   color: #d8e2ef;
   background-color: #152e4d;
