@@ -368,6 +368,14 @@ footer {
   font-weight: normal;
 }
 
+.footer__bottom .logo-black {
+  display: inline-block;
+}
+
+.footer__bottom .logo-white {
+  display: none;
+}
+
 .intro {
   background: linear-gradient(-45deg, #ec5252, #6e1a52);
   padding: 20px;
@@ -1197,9 +1205,68 @@ body.darkMode {
   border-right: 1px solid #344050 !important;
 }
 
+.darkMode .footer__top ul .nav-item .nav-link {
+  color: #d8e2ef;
+}
+
+.darkMode .footer__top.btn-group .dropdown-menu {
+  background-color: #132238;
+  border-color: #344050;
+}
+
+.darkMode .footer__top.btn-group .dropdown-menu .dropdown-item {
+  color: #d8e2ef;
+}
+
+.darkMode .footer__top.btn-group .dropdown-menu .dropdown-item:hover {
+  background-color: #152e4d;
+}
+
+.darkMode hr {
+  background-color: #344050;
+}
+
+.darkMode .footer__bottom {
+  color: #9da9bb;
+}
+
+.darkMode .footer__bottom .nav-link {
+  color: #d8e2ef;
+}
+
+.darkMode .footer__bottom .logo-black {
+  display: none;
+}
+
+.darkMode .footer__bottom .logo-white {
+  display: inline-block;
+}
+
 .darkMode .button--white:hover {
   color: #d8e2ef;
   background-color: #152e4d;
+  border: 1px solid #344050;
+}
+
+.darkMode .button--red:hover {
+  color: #fff;
+  background-color: #e63757;
+  border: 1px solid #e63757;
+}
+
+.darkMode .button--dropup {
+  color: #d8e2ef;
+  background-color: #152e4d;
+  border: 1px solid #344050;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.darkMode .button--dropup:hover {
+  color: #d8e2ef;
+  background-color: #132238;
   border: 1px solid #344050;
 }
 

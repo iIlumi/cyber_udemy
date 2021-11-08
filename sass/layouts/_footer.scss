@@ -64,4 +64,13 @@ footer {
   .nav-link {
     @include styleText($color-blue-0, $fs-1, $fw-0);
   }
+
+  // Ẩn hiện logo darkmode như header
+  .logo-black {
+    display: inline-block;
+  }
+
+  .logo-white {
+    display: none;
+  }
 }
