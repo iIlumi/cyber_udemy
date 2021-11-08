@@ -2,6 +2,7 @@
   .myNavBar {
     background-color: $color-dark-4;
   }
+
   .myNavBar__left {
     .logo-black {
       display: none;
@@ -11,6 +12,31 @@
       display: inline-block;
     }
   }
+
+  .myNavBar__categories {
+    color: $color-dark-3;
+
+    i {
+      color: $color-dark-5;
+    }
+  }
+
+  .myNavBar__form-search {
+    @include styleFormSearch($color-dark-0, $color-dark-6, $color-dark-2);
+    // Form tạo bằng mixin sẽ có selector con riêng
+    // Muốn đè phải gọi đúng selector trong mixin ra hoặc copy lại selector
+    // Nếu chỉnh mixin phải dò lại toàn bộ code scss có gọi mixin đó
+    // Nếu ko thì hạn chế gọi lại mixin 
+    // -> nhưng phải biết selector đã dùng trong mixin nếu có nhiều cấp để đè
+    .input-group .form-control {
+      color: $color-dark-5;
+
+      &::placeholder {
+        color: $color-dark-5;
+      }
+    }
+  }
+
   .myNavBar__right {
   }
 }

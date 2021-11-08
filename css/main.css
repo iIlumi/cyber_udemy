@@ -1013,4 +1013,90 @@ body.darkMode {
 .darkMode .myNavBar__left .logo-white {
   display: inline-block;
 }
+
+.darkMode .myNavBar__categories {
+  color: #9da9bb;
+}
+
+.darkMode .myNavBar__categories i {
+  color: #d8e2ef;
+}
+
+.darkMode .myNavBar__form-search .input-group {
+  background-color: #152e4d;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: none;
+  transition: none;
+  color: #505763;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control::-webkit-input-placeholder {
+  color: #505763;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control:-ms-input-placeholder {
+  color: #505763;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control::-ms-input-placeholder {
+  color: #505763;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control::placeholder {
+  color: #505763;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control:focus {
+  background-color: #132238;
+  border-color: #344050;
+  border-right-color: transparent;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control:focus + .input-group-append .input-group-text {
+  background-color: #132238;
+  border-color: #344050;
+  border-left-color: transparent;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.darkMode .myNavBar__form-search .input-group .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+
+.darkMode .myNavBar__form-search .input-group .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control {
+  color: #d8e2ef;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control::-webkit-input-placeholder {
+  color: #d8e2ef;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control:-ms-input-placeholder {
+  color: #d8e2ef;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control::-ms-input-placeholder {
+  color: #d8e2ef;
+}
+
+.darkMode .myNavBar__form-search .input-group .form-control::placeholder {
+  color: #d8e2ef;
+}
 /*# sourceMappingURL=main.css.map */
